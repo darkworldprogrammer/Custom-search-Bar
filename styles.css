@@ -74,7 +74,7 @@ img {
     background-color: rgba(128, 128, 128, 0.26);
     border-color: rgba(128, 128, 128, 0.26);
     /* box-shadow: 1px 2px 5px rgba(0, 255, 255, 0.384); */
-    border-radius: 35px 35px 1px 1px;
+    /* border-radius: 35px 35px 1px 1px; */
     border-color: rgba(128, 128, 128, 0.26);
     border: transparent;
 }
