@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 78vh;
+    padding-inline: 1rem;
+}
+
+.search-menu {
+    max-width: 730px;
+    width: 100%;
+    position: relative;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0.443);
+    border-radius: 35px;
+    margin-top: 30px;
+    padding: .5px 38px;
+}
+
+.search-area input {
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+.s-icon,
+.close-icon {
+    width: 20px;
+}
+
+.close-icon {
+    display: none;
+}
+
+.search-area:focus-within .close-icon {
+    display: flex;
+}
+
+.search-area:hover {
+    background-color: rgba(128, 128, 128, 0.26);
+    border-color: rgba(128, 128, 128, 0.26);
+    /* box-shadow: 1px 2px 5px rgba(0, 255, 255, 0.384); */
+    border-color: rgba(128, 128, 128, 0.26);
+    border: transparent;
+}
+
+.search-area:focus-within {
+    background-color: rgba(128, 128, 128, 0.26);
+    border-color: rgba(128, 128, 128, 0.26);
+    /* box-shadow: 1px 2px 5px rgba(0, 255, 255, 0.384); */
+    border-radius: 35px 35px 1px 1px;
+    border-color: rgba(128, 128, 128, 0.26);
+    border: transparent;
+}
+
+.border-line {
+    background-color: rgba(128, 128, 128, 0.26);
+    border-top: 2px solid rgba(128, 128, 128, 0.26);
+    border-color: rgba(128, 128, 128, 0.26);
+    margin-inline: 40px;
+    margin-top: 3px;
+}
+
+.suggestion-menu {
+    background-color: rgba(128, 128, 128, 0.26);
+    border-radius: 0 0 40px 40px;
+    padding: 6px 5px 2px;
+    box-shadow: 0 42px 6px 3px black;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.suggestion-menu p {
+    margin: 0;
+    border-radius: 4px;
+    font-size: 30px;
+    padding: 8px 33px;
+}
+
+.suggestion-menu p:hover {
+    background-color: rgba(242, 4, 238, 0.35);
+}
+
+.search-area:focus-within+.suggestion-menu {
+    display: block;
+    color: rgb(242, 4, 238);
+    cursor: pointer;
+}
+
+.doodle-icon {
+    /* display: flex;
+    margin-left: auto;
+    margin-right: 5px; */
+    width: 60px;
+    position: fixed;
+    right: 30px;
+}
